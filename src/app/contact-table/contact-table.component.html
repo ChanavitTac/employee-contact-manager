@@ -1,0 +1,29 @@
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">name</th>
+                <th scope="col">email</th>
+                <th scope="col">phone number</th>
+                <th scope="col">job title</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <th scope="row">{{ employee.id }}</th>
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.email }}</td>
+                <td>{{ employee.phone }}</td>
+                <td>{{ employee.jobtitle }}</td>
+                <td><button class="btn btn-primary" (click)="editEmployee(employee)">Edit</button></td>
+                <td><button class="btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="btn btn-success" (click)="openModal()">Add Employee</button>
+</div>
+

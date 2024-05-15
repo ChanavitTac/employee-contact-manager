@@ -22,6 +22,7 @@ export class EmployeeModalComponent implements OnInit {
 
   save() {
     this.modalService.close(this.newEmployee);
+    console.log(this.newEmployee)
   }
 
   reset() {

@@ -4,19 +4,19 @@
     <form (ngSubmit)="save()">
         <div class="form-group">
             <label for="name" class="form-label">Name: </label>
-            <input id="name" class="form-control" [(ngModel)]="newEmployee.name" placeholder="name">
+            <input id="name" class="form-control" name="name" [(ngModel)]="newEmployee.name" placeholder="name">
         </div>
         <div class="form-group">
             <label for="email" class="form-label">Email: </label>
-            <input id="email" class="form-control" [(ngModel)]="newEmployee.email" placeholder="email">
+            <input id="email" class="form-control" name="email" [(ngModel)]="newEmployee.email" placeholder="email">
         </div>
         <div class="form-group">
             <label for="phone" class="form-label">Phone number: </label>
-            <input id="phone" class="form-control" [(ngModel)]="newEmployee.phone" placeholder="phone">
+            <input id="phone" class="form-control" name="phone" [(ngModel)]="newEmployee.phone" placeholder="phone">
         </div>
         <div class="form-group">
             <label for="jobtitle" class="form-label">Job title: </label>
-            <input id="jobtitle" class="form-control" [(ngModel)]="newEmployee.jobtitle" placeholder="job title">
+            <input id="jobtitle" class="form-control" name="jobtitle" [(ngModel)]="newEmployee.jobtitle" placeholder="job title">
         </div>
         <div class="d-flex">
             <button class="btn btn-success" type="submit">Ok</button>

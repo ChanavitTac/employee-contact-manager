@@ -30,6 +30,7 @@ export class ContactTableComponent implements OnInit {
   addEmployee(employee: Omit<Employee, "id">): void {
     this.employeeService.addEmployee(employee)
       .subscribe((newEmployee) => {
+        console.log(newEmployee)
         this.employees.push(newEmployee);
       });
   }
